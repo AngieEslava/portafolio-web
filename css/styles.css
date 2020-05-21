@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#200D39;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'menu'
+    'footer';
+}
+
+nav {
+    grid-area: 'header';
+    justify-content: space-around;
+    position: fixed;
+    min-width: 100%;
+    top: 0;
+    margin: 0 auto;
+    height: 150px;
+    background-image: url(../images/imaginacion4.jpg);
+    width: auto;
+    opacity: 0.8;
+}
+
+nav ul{
+    list-style: none;
+    display: block;
+    float: left;
+}
+
+nav ul li a{
+    font-size: 23px;
+    font-family: 'Beth Ellen', cursive;
+    margin-left: 1000px;
+    color: #200D39;
+    padding: 5px;
+    font-weight: bolder;
+    transition: color 1s;
+}
+
+nav ul li a:hover{
+    color: cyan;
+}
+
+#welcome-section{
+    grid-area: 'main';
+    display: flex;
+    margin: 0 auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    color: aliceblue;
+    margin-top: 200px;
+}
+
+#welcome-section p{
+    font-family: 'Crafty Girls', cursive;
+    padding-left: 80px;
+    animation-name: color1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+#welcome-section h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes color{
+    from {color: #21ffd0;}
+  to {color: yellow;}
+}
+
+@keyframes color1{
+    from{color: #00ff00;}
+    to{color: #ff0bf7;}
+}
+
+img{
+    max-width: 350px;
+    min-height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#projects{
+    grid-area: menu;
+    padding-top: 200px;
+}
+
+#projects h2{
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 40px;
+    margin-left: 160px;
+    animation-name: color2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes color2{
+    from{color: yellowgreen;}
+    to{color: #ff00ff;}
+}
+
+#projects h2:hover{
+    color:aliceblue ;
+}
+
+.creations{
+    margin-top: 1000px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.creations a{
+    font-family: 'Caveat', sans-serif;
+    font-size: 25px;
+    color: orange;
+    transition: color 1s;
+}
+
+.creations a:hover{
+    color: #7500ff;
+}
+
+.creations a p{
+    margin: 10px;
+}
+
+img:hover{
+    width: auto;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    padding-top: 120px;
+}
+  
+.contact-section-header > h2 {
+    font-size: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    color:#ff0000;
+    animation-name: color3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes color3{
+    from{color:#ff0000;}
+    to{color: #06ffc9;}
+}
+
+.contact-links a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    padding: 0px 20px 0px 20px;
+    flex-wrap: wrap;
+    font-family: 'Crafty Girls', cursive;
+    color: lime;
+    transition: color 1s;
+}
+
+.contact-links a:hover{
+      color: crimson;
+}
+  
+.contact-details {
+    font-size: 20px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 3s ease-out;
+}
+  
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+footer {
+    grid-area: 'footer';
+    font-weight: bold;
+    width: 100%;
+    color:deeppink;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    background:#0D1039;
+    box-shadow: 2px 0px 10px black;
+    font-family: 'Crafty Girls', cursive;  
+}
+  
+footer  p {
+    margin: 2rem;   
+    transition: color 1s;
+}
+
+footer:hover{
+    color:springgreen;
+}
+  
+footer i {
+    vertical-align: middle;
+}
